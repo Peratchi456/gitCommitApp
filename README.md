@@ -1,32 +1,42 @@
 # gitCommitApp
-This app is used to view the commit difference details from the github repository.
 
-Ensure nodejs is installed in your system
-please refer this link to download nodejs https://nodejs.org/en
+This app is used to view the commit differences from a GitHub repository.
 
-clone the application repository from https://github.com/Peratchi456/gitCommitApp
+Ensure Node.js is installed on your system. Please refer to this link to download Node.js: https://nodejs.org/en
 
-Steps To Run The Application
-Step 1
-Start Backend Server
-Open new terminal in VSCode and navigate to backend and run the below command
-npm install -> Press enter.
-After nodemodules installed,Run the below command
-npm start -> Press enter.
+Clone the application repository from https://github.com/Peratchi456/gitCommitApp
 
-Step 2
-Start Frontend
-Open new terminal in VSCode and navigate to frontend/github-commit and run the below command
-npm install -> Press enter.
-After nodemodules installed,Run the below command
-npm start -> Press enter.
+## Steps to Run the Application
 
-Step 3
-Navigate to landing page
-Open any browser and paste this link in the url http://localhost:3000/
-Enter the below details
-Owner : Peratchi456
-Repo : chatApp
-commit SHA : 734ece1ec12433765863856671c781bed839842d
+### Step 1: Start Backend Server
 
-click the Get Commit Details Button
+1. Place the `.env` file inside the `backend` folder (this file was shared via email).
+2. Open a new terminal in VS Code, navigate to the `backend` folder, and run the following command:
+   ```
+   npm install
+   ```
+3. After the node modules are installed, run the following command to start the server:
+   ```
+   npm start
+   ```
+
+### Step 2: Start Frontend
+
+1. Open a new terminal in VS Code, navigate to `frontend/github-commit`, and run the following command:
+   ```
+   npm install
+   ```
+2. After the node modules are installed, run the following command to start the frontend:
+   ```
+   npm start
+   ```
+
+### Step 3: Navigate to Landing Page
+
+1. Open any browser and paste this link in the URL bar: `http://localhost:3000/`
+2. Enter the following details:
+   - **Owner:** Peratchi456
+   - **Repo:** chatApp
+   - **Commit SHA:** 734ece1ec12433765863856671c781bed839842d
+
+3. Click the **Get Commit Details** button.
