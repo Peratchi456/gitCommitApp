@@ -6,7 +6,6 @@ const cors = require('cors');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 app.use(express.json());
 app.use(cors());
@@ -14,7 +13,7 @@ app.use(cors());
 const githubAPI = axios.create({
   baseURL: 'https://api.github.com',
   headers: {
-    Authorization: `token ${GITHUB_TOKEN}`
+    Authorization: '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'
   }
 });
 
