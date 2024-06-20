@@ -12,17 +12,10 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 app.use(express.json());
 app.use(cors());
 
-// Function to decode Base64 encoded string
-function decodeBase64(encodedString) {
-  const buffer = Buffer.from(encodedString, 'base64');
-  const decodedString = buffer.toString('utf-8');
-  return decodedString;
-}
-
 const githubAPI = axios.create({
   baseURL: 'https://api.github.com',
   headers: {
-    Authorization: `token ${decodeBase64(GITHUB_TOKEN)}`
+    Authorization: `token ${GITHUB_TOKEN}`
   }
 });
 
