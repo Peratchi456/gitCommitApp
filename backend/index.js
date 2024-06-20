@@ -6,14 +6,23 @@ const cors = require('cors');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+
 
 app.use(express.json());
 app.use(cors());
 
+// Function to decode Base64 encoded string
+function decodeBase64(encodedString) {
+  const buffer = Buffer.from(encodedString, 'base64');
+  const decodedString = buffer.toString('utf-8');
+  return decodedString;
+}
+
 const githubAPI = axios.create({
   baseURL: 'https://api.github.com',
   headers: {
-    Authorization: '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'
+    Authorization: `token ${decodeBase64(GITHUB_TOKEN)}`
   }
 });
 
