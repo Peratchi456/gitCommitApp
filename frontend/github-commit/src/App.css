@@ -1,0 +1,157 @@
+.App {
+  background-color: #FBFDFF;
+  max-width: 100%;
+
+}
+
+.App-header {
+  background-color: #FBFDFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.inptxt {
+  margin-bottom: 1rem;
+}
+
+.inpform {
+  display: contents;
+}
+
+
+/*new*/
+.commit-details {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  text-align: left;
+  background-color: #FBFDFF;
+}
+
+.commit-details h2,
+.commit-details p,
+.commit-details ul {
+  margin-bottom: 20px;
+}
+
+.commit-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.commit-details li {
+  margin-bottom: 20px;
+}
+
+/*Text Editor for code
+*/
+pre {
+  background-color: #ffffff; 
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2rem;
+}
+
+img {
+  border-radius: 50%;
+  width: 60px;
+  height: fit-content;
+  margin-right: 10px;
+}
+
+.txtHeader {
+  color: #39496A;
+  font-weight: 600;
+  size: 16px;
+  line-height: 24px;
+}
+
+.txtAuthor {
+  font-family: arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6D727c;
+
+}
+
+.divOuter{
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.divSecFir{
+  display: flex;
+}
+
+.divSecTwo{
+  margin-left: 36%;
+  text-align: right;
+}
+
+.link-monospace{
+  font-family: 'Courier New',Bold;
+  font-size: 13px;
+  color: #1C7CD6;
+}
+.accord{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.commitedBy{
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6D727c;
+}
+
+/*Accordian Css*/
+.accordion {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.accordion-item {
+  border-top: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.accordion-item:first-child {
+  border-top: none;
+}
+
+.accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Courier New',Bold;
+  font-size: 13px;
+  color: #1C7CD6;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
+
+
